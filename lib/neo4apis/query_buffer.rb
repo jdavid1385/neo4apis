@@ -4,9 +4,7 @@ module Neo4Apis
     def initialize(neo4j_session, flush_size)
       @neo4j_session = neo4j_session
       @flush_size = flush_size
-
       @faraday_connection = @neo4j_session.adaptor.requestor
-
       super()
     end
 
